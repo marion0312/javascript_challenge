@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    'result operation'
+    'buttons buttons';
+    width: 400px;
+    height: 100px;
+}
+
+.result, .operation {
+    font-size: 24px;
+    padding: 0.5em;
+}
+
+.result { grid-area: result; }
+.operation { grid-area: operation; text-align: end; }
+
+.buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.buttons button {
+    padding: 0.5em;
+}
