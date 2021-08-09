@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    'label-kg kg'
+    'label-m m'
+    'btn btn';
+    grid-gap: 1em;
+    width: 50vw;
+    margin: 1px auto;
+}
+
+label[for='kilogram'] { grid-area: label-kg; }
+#kilogram { grid-area: kg; }
+label[for='meters'] { grid-area: label-m; }
+#meters { grid-area: m; }
+button { 
+    grid-area: btn; 
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    padding: 1em;
+}
+
+input {
+    padding: 5px;
+}
