@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Conversion</title>
+
+    <script defer src="script.js"></script>
+
+    <style>
+        .container {
+            width: 500px;
+            /* margin: 1em auto; */
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        button {
+            margin: 1em 0;
+        }
+
+        textarea {
+            margin-top: 1em;
+        }
+
+        p {
+            padding: 0.2em 0;
+            margin: 0.5em 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: rgb(124, 33, 33);
+            color: white;
+            font-weight: bold;
+        }
+
+        .instructions {
+            text-align: center;
+        }
+
+        button {
+            padding: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="header">Height Converter</p>
+        <p class="instructions">Choose between ft &amp; in to cm and cm to in</p>
+        <fieldset>
+            <legend>Convert ft &amp; in to cm</legend>
+            <input type="number" id="feet">
+            <label for="feet">feet</label>
+
+            <input type="number" id="inches">
+            <label for="inches">Inches</label>
+        </fieldset>
+
+        <button>Calculate</button>
+
+        <textarea readonly></textarea>
+    </div>
+</body>
+</html>
