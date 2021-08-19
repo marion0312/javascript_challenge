@@ -1,0 +1,14 @@
+.slider {
+    display: flex;
+    margin-bottom: 1em;
+
+    img {
+        width: 200px;
+        object-fit: cover;
+    }
+
+    img:not(:first-child) {
+        margin-left: 1em;
+        display: none;
+    }
+}
